@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_a"
+        android:text="显式调用A_Activity"
+        android:onClick="click"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_b"
+        android:text="隐调用B_Activity"
+        android:onClick="click"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_c"
+        android:text="隐式调用C_Activity"
+        android:onClick="click"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_d"
+        android:text="隐式调用share_Activity"
+        android:onClick="click"/>
+
+</LinearLayout>

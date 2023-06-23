@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InTent"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".A_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sss.action.x1" />
+                <action android:name="com.sss.action.x2" />
+                <category android:name="com.sss.category.c1" />
+                <category android:name="com.sss.category.c2" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".B_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sss.b1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".C_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sss.action.x1" />
+                <action android:name="com.sss.action.x3" />
+                <category android:name="com.sss.category.c1" />
+                <category android:name="com.sss.category.c3" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sss.action.x2" />
+                <category android:name="com.sss.category.c2" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:mimeType="audio/*" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".Share_Activity"/>
+    </application>
+</manifest>
